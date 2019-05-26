@@ -1,0 +1,32 @@
+<ion-slides pager="true" [options]="slideOpts" style="height: 100%;">
+  <ion-slide>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="./assets/img/logo.png" class="img-logo">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-slide>
+  <ion-slide class="d-block" *ngFor="let paso of pasos">
+    <ion-grid no-padding fixed style="height: 100%;">
+      <ion-row style="height: 25%;" no-padding>
+        <ion-col no-padding style="width: 100%; color: #3CBA5D;">
+          <h5 padding-top> <strong>{{paso.nombre}} </strong></h5>
+        </ion-col>
+      </ion-row>
+      <ion-row style="height: 75%;" no-padding>
+        <ion-col no-padding>
+          <div>
+            <h4 no-margin>{{paso.descripcion}}.</h4>
+            <div style="padding: 0 80px; margin-top: 8px">
+              <div class="img-paso">
+                <img [src]="paso.imagen | insertImagen:paso.imagen">
+              </div>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-slide>
+</ion-slides>

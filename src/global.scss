@@ -9,3 +9,45 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+.alert-head{
+    background: #3CBA5D !important;
+    margin-bottom: 10px !important;
+}
+
+.alert-head .alert-title{
+    color: white !important;
+    margin: 2px 0px!important;
+    font-weight: 400;
+}
+
+.alert-button-group .alert-button{
+    border: none !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #3CBA5D !important;
+    border: 2px solid #009933 !important;
+}
+
+.alert-button-inner{
+    color: #3CBA5D !important;
+    font-weight: 400;
+}
+
+/* Botones*/
+.my-button{
+    max-width: 300px !important;
+    margin: 0px auto !important;
+    min-width: auto !important;
+}
+/* Botones*/
+
+/* flex */
+.d-block{
+    display: block !important;
+}
+
+.d-flex{
+    display: flex !important;
+}

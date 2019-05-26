@@ -1,0 +1,54 @@
+<ion-header no-border translucent>
+    <ion-toolbar mode="ios">
+        <ion-buttons slot="start">
+            <ion-back-button color="success" defaultHref="/" text=""></ion-back-button>
+        </ion-buttons>
+        <ion-title color="success"> Registro </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-grid no-padding no-margin>
+        <ion-row>
+            <ion-col no-padding>
+                <app-avatar-selector></app-avatar-selector>
+            </ion-col>
+        </ion-row>
+
+        <ion-row justify-content-center>
+            <div style="width: 300px;">
+                <ion-list>
+                    <form>
+                        <ion-item no-padding>
+                            <ion-label position="floating">Email</ion-label>
+                            <ion-input name="email" type="email" required></ion-input>
+                        </ion-item>
+                        <ion-item no-padding>
+                            <ion-label position="floating">Nombre</ion-label>
+                            <ion-input name="nombre" type="text" required></ion-input>
+                        </ion-item>
+                        <ion-item no-padding>
+                            <ion-label position="floating">Password</ion-label>
+                            <ion-input name="password" type="password" required>
+                            </ion-input>
+                        </ion-item>
+                        <ion-item no-padding>
+                            <ion-label position="floating">Telefono movil</ion-label>
+                            <ion-input name="movil" type="number" required>
+                            </ion-input>
+                        </ion-item>
+                        <p>
+                            <small> Se enviara un mensaje con el numero de validacion.</small> 
+                        </p>
+
+                        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 50px; margin-bottom: 20px">
+                            <ion-button (click)="onClickRegistro()" color="success" expand="block" style="width: 300px;"
+                                mode="md">
+                                Crear cuenta
+                            </ion-button>
+                        </div>
+                    </form>
+                </ion-list>
+            </div>
+        </ion-row>
+    </ion-grid>
+</ion-content>
